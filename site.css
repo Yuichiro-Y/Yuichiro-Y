@@ -1,0 +1,180 @@
+html,body {
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.wrap {
+  width: 100%;
+  min-width: 700px;
+  height: 100%;
+}
+.left-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f8edc9;
+}
+.right-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  margin-top: -250px;
+  margin-left: -170px;
+}
+.content .circle {
+  width: 240px;
+  height: 240px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.right-content .content .circle{
+  background-color: #f8edc9;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: center;
+  border-radius: 50%;
+}
+.content h2 {
+  font-family: Amiri, serif;
+  font-size: 64px;
+  font-weight: normal;
+  margin-top: -35px;
+  margin-bottom: 21px;
+  padding-bottom: 7px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.content h2:after {
+  content: "";
+  width: 140px;
+  border-top: 3px solid #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -70px;
+}
+/*ボーダー設定*/
+.border {
+  content: "";
+  width: 100%;
+  border-top: 3px solid black;
+  position: absolute;
+  bottom: 0;
+}
+.right-content .content h2:after {
+  border-color: #f8edc9;
+}
+.content p {
+  margin: 0 auto;
+  width: 230px;
+  line-height: 1.7em;
+}
+header {
+  position: fixed;
+  top: -5px;
+  left: 10px;
+  width: 100%;
+  z-index: 1;
+}
+/*ロゴ決め*/
+.logo {
+  float: left;
+  margin-right: 10px;
+  width: 100%;
+  height: 100%;
+  max-width: 125px;
+  max-height: 40px;
+  font-size: 20px;
+  margin-top: 27px;
+}
+nav li {
+  float: left;
+  padding-top: 25px;
+  margin: 0 15px;
+  font-size: 20px;
+  list-style: none;
+}
+
+/*div .content2デザイン*/
+.content2 {
+  margin: 0 auto;
+  width: 55%;
+  max-width: 700px;
+}
+.works {
+  padding-top: 60px;
+}
+.works h3 {
+  margin-bottom: 25px;
+  font-weight: normal;
+  font-family: Georgia;
+  font-size: 36px;
+  text-align: center;
+  color: #c03;
+}
+.works p {
+  margin-bottom: 13px;
+}
+.works img {
+  margin-bottom: 100px;
+}
+.works .img3 {
+  margin-top: 600px;
+}
+
+
+/*footerデザイン*/
+footer {
+  width: 100%;
+  background-color: #99A5B9;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  border: 3px solid #00f;
+  box-sizing: border-box;
+}
+address {
+  padding: 25px 0 25px;
+  font-style: normal;
+}
+address .addtext {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+address .tel {
+  margin-bottom: 15px;
+  font-size: 21px;
+}
+address a img {
+  display: inline-block;
+  width: 34px;
+}
+#copyright {
+  padding-bottom: 15px;
+}
+
+/*div .wrapper 全体の骨組み*/
+.wrapper {
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
